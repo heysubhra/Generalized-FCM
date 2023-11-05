@@ -1,0 +1,60 @@
+// https://ars.els-cdn.com/content/image/1-s2.0-S0304380017301060-gr3_lrg.jpg
+// https://www.sciencedirect.com/science/article/pii/S0304380017301060
+
+digraph riverFCM {
+    node [shape=box];
+    bgcolor="lightgray"
+
+
+    c1[xlabel="Agro-forestry production",value=0];
+    c2[xlabel="Sediments dynamics",value=0];
+    c3[xlabel="Water quality",value=0];
+    c4[xlabel="Natural water flow regime",value=0];
+    c5[xlabel="Cross barriers, dams and weirs",value=0];
+    c6[xlabel="Bank conditions",value=0];
+    c7[xlabel="River connectivity",value=0];
+    c8[xlabel="Hydroelectric production",value=0];
+    c9[xlabel="In-stream communities",value=0];
+    c10[xlabel="Riparian vegetation",value=0];
+    c11[xlabel="Socioeconomic aspects",value=0];
+    c12[xlabel="Continuity and width of riparian landscapes",value=0];
+    c13[xlabel="Urban uses, infrastructures",value=0];
+    c14[xlabel="Agro-forestry production",value=0];
+
+
+    c1[shape=circle,color=blue,style=filled]
+    c2[shape=square,color=red,style=filled]
+    c3[shape=diamond,color=greenyellow,style=filled]
+    c4[shape=triangle,color=yellow,style=filled]
+    c5[shape=circle,color=lightblue,style=filled]
+    c6[shape=circle,color=grey,style=filled]
+    c7[shape=square,color=green4,style=filled]
+    c8[shape=diamond,color=mediumspringgreen,style=filled]
+    c9[shape=triangle,color=slateblue,style=filled]
+    c10[shape=circle,color=purple2,style=filled]
+    c11[shape=square,color=coral,style=filled]
+    c12[shape=diamond,color=white,style=filled]
+    c13[shape=triangle,color=lightpink,style=filled]
+    c14[shape=circle,color=mediumblue,style=filled]
+
+    c1 -> c2 [label=0.25,weight=0.25]
+    c2 -> c13 [label=-0.57,weight=-0.57]
+    c12 -> c3 [label=0.63,weight=0.63]
+    c13 -> c3 [label=-0.94,weight=-0.94]
+    c11 -> c10 [label=0.46,weight=0.46]
+    c10-> c4 [label=0.54,weight=0.54]
+    c4-> c8 [label=0.97,weight=0.97]
+    c8 -> c7 [label=-0.63,weight=-0.63]
+    c7 -> c3 [label=0.037,weight=0.037]
+    c3 -> c11 [label=0.2,weight=0.2]
+    c3 -> c8 [label=-0.03,weight=-0.03]
+    c1 -> c3 [label=0.43,weight=0.43]
+    c1 -> c7 [label=0.4,weight=0.4]
+    c2 -> c7 [label=-0.17,weight=-0.17]
+    c13 -> c7 [label=-0.26,weight=-0.26]
+    c11 -> c8 [label=0.34,weight=0.34]
+    c10-> c8 [label=0.06,weight=0.06]
+    c10-> c7 [label=0.09,weight=0.09]
+    c4-> c3 [label=0.34,weight=0.34]
+
+}
